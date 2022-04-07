@@ -10,6 +10,7 @@ class Solution {
          I use 0 as a represent of destoryed stone
          So, since (last - 1)th element is not equal to 0 game can be played
          **/
+
         while(stones[n - 2] != 0) {
             int y = stones[n - 1];
             int x = stones[n - 2];
