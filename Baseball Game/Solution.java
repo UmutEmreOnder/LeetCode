@@ -1,6 +1,9 @@
 class Solution {
     public int calPoints(String[] ops) {
-        Stack<Integer> myStack = new Stack<>();
+        /**
+         * stackoverflow.com/questions/12524826/why-should-i-use-deque-over-stack
+         */
+        Deque<Integer> myStack = new ArrayDeque<>();
 
         for(int i = 0; i < ops.length; i++) {
             switch (ops[i]) {
@@ -34,7 +37,7 @@ class Solution {
      * Also, we still need the second last element in our stack so we store it in a dummy variable (num)
      * After adding last + (last - 1) elements, we push it back
      */
-    public void plus(Stack<Integer> myStack) {
+    public void plus(Deque<Integer> myStack) {
         int num = myStack.pop();
         int newNum = num + myStack.peek();
         myStack.push(num);
