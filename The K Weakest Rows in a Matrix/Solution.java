@@ -46,7 +46,11 @@ class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
         // To store them on a ascending list, we need default priorityQueue, since its size is fixed we can declare its size
         PriorityQueue<comparableArray> rowList = new PriorityQueue<>(mat.length);
-
+        /**
+         * PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] != b[0] ? b[0] - a[0] : b[1] - a[1]);
+         * This question can be cone with that pq, this solution and my solution are litteraly same.
+         * I chose this way to make it more understandable when reviewed
+         */
 
         for(int i = 0; i < mat.length; i++) { // O(m), m is the length of mat
             comparableArray newArray = new comparableArray(mat[i], i);  // O(logn)
