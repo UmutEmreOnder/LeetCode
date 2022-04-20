@@ -7,8 +7,7 @@ class Solution {
             for(int i = startPos[0] + 1; i <= homePos[0]; i++) {
                 sum += rowCosts[i];
             }
-        }
-        else {
+        } else {
             for(int i = startPos[0] - 1; i >= homePos[0]; i--) {
                 sum += rowCosts[i];
             }
@@ -20,8 +19,7 @@ class Solution {
             for(int i = startPos[1] + 1; i <= homePos[1]; i++) {
                 sum += colCosts[i];
             }
-        }
-        else {
+        } else {
             for(int i = startPos[1] - 1; i >= homePos[1]; i--) {
                 sum += colCosts[i];
             }
