@@ -13,7 +13,7 @@ class Solution {
         if(l1 == null) return l2;
 
         int remainder = 0;
-        // l1 will be out answer list, so we modify l1
+        // l1 will be returned, so we modify l1
         ListNode head = l1;
 
         // If l2 is null and remainder is 0, the rest will be stay same, no need to loop
