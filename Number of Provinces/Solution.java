@@ -58,7 +58,7 @@ class UnionFind {
         return find(x) == find(y);
     }
 
-    // Number of roots is equal to number of province
+    //Number of roots is equal to number of province
     public int numOfRoots() {
         int count = 0;
         for(int i = 0; i < root.length; i++) {
