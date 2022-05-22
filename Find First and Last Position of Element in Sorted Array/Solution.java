@@ -32,14 +32,14 @@ class Solution {
                 indexLeft--;
             }
         }
-        catch (Exception e) {}
+        catch (Exception ignored) {}
 
         try {
             while(nums[indexRight + 1] == target) {
                 indexRight++;
             }
         }
-        catch (Exception e) {}
+        catch (Exception ignored) {}
 
         answer[0] = indexLeft;
         answer[1] = indexRight;
