@@ -16,7 +16,7 @@ class Solution {
                 case 'X':
                     negative = i < s.length() - 1 && (s.charAt(i + 1) == 'L' || s.charAt(i + 1) == 'C');
                     break;
-                case 'C':
+                default:
                     negative = i < s.length() - 1 && (s.charAt(i + 1) == 'D' || s.charAt(i + 1) == 'M');
                     break;
             }
