@@ -25,7 +25,8 @@ class Solution {
             }
 
             // Going down after go rigth, so we add 1 to row
-            startColumn--; startRow++;
+            startColumn--;
+            startRow++;
 
             // Going down
             for(; startRow < n; startRow++) {
@@ -38,7 +39,8 @@ class Solution {
             }
 
             // Going left after going down, so we substract 1 from column
-            startRow--; startColumn--;
+            startRow--;
+            startColumn--;
 
             // Going left
             for(; startColumn >= 0; startColumn--) {
@@ -51,7 +53,8 @@ class Solution {
             }
 
             // Going up after going left, so we substract 1 from row
-            startColumn++; startRow--;
+            startColumn++;
+            startRow--;
 
             // Going up
             for(; startRow >= 0; startRow--) {
@@ -64,7 +67,8 @@ class Solution {
             }
 
             // Going right after going up, so we add 1 to column
-            startRow++; startColumn++;
+            startRow++;
+            startColumn++;
         }
 
 
